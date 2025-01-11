@@ -1,0 +1,230 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+Extract for all ZIP-Codes the polygons and compute their centres.
+```{r}
+# Load data from Census: 1km x 1km division of germany and according census data
+library(geojsonR)
+library(sf)
+library(rgeos)
+
+# As both datasets have differently named ids, we need to rename one
+Zensus_km_raster <- read_sf("./Inspire/DE_Gitter_ETRS89_LAEA_1km.dbf")
+Zensus_km_raster$Gitter_ID_1km <- Zensus_km_raster$ID_1km 
+Zensus_data_raster <- read.csv("~/Desktop/ZIP-Codes/Inspire/Zensus_klassierte_Werte_1km-Gitter.csv", sep=";")
+
+#Merge both datasets (Geometry + Data)
+census<-merge(Zensus_data_raster,Zensus_km_raster,by="Gitter_ID_1km")
+census$center <- st_centroid(census$geometry)
+
+library(geojsonsf)
+plz<-geojson_sf( "./plz-5stellig.geojson")
+
+#Assign both the same crs
+plz<-st_transform(plz,"WGS84")
+plz$centroid <- st_centroid(plz$geometry)
+census$center<-st_transform(census$center,"WGS84")
+
+#Drop areas without population (Data is classified in categories from -1 to 8)
+census<-census[census$Einwohner>0,]
+census$plz <- "00000"
+Sys.time()
+```
+
+
+```{r}
+# compute now per PLZ which squares are inside of it
+
+# Iterativly search for all centers of 1km that are inside of a plz area
+for(i in 8101:nrow(plz))
+{
+census$plz[st_within(census$center,plz$geometry[i],sparse=FALSE, prepared=TRUE)]<- plz$plz[i]
+if(i%%100==0){
+  save(census, file=paste0("./Backups/backup_",i))
+}
+  
+}
+Sys.time()
+```
+
+
+```{r}
+library(sf)
+library(dplyr)
+load("~/Desktop/ZIP-Codes/Zip_codes_per_1km.RData")
+plz_population <- census[,c("Einwohner","center","plz","geometry")]
+# Sample all square kilometers with the highest population and compute the centroid
+plz_population <- plz_population %>% group_by(plz) %>% filter(Einwohner == max(Einwohner)) %>% summarise(multipoint=st_union(center)) 
+plz_population$centroid<- st_centroid(plz_population$multipoint)
+```
+
+
+```{r}
+#Add now the population centroid and the normal centroid within one dataframe
+plz <- plz %>% select(c("plz","geometry","centroid"))
+plz_population <- plz_population %>%  select(c("plz","centroid"))
+colnames(plz_population)<-c("plz","pop_centroid")
+final <-left_join(plz,plz_population,by="plz")
+```
+
+
+
+## Create reduced version for university plzs
+
+```{r}
+bielefeld <-st_sfc(st_point(c(8.494114990664063, 52.03799129826941)))
+clausthal <-st_sfc(st_point(c(10.334054529001767, 51.80471565422926)))
+dortmund <-st_sfc(st_point(c(7.4083428699812295, 51.4911786177713)))
+halle <-st_sfc(st_point(c(11.968826592393723,51.48666701918293)))
+hannover <-st_sfc(st_point(c(9.723282978795218, 52.37902794020029)))
+magdeburg <-st_sfc(st_point(c(11.646130117139895, 52.14013877462337)))
+muenster <-st_sfc(st_point(c(7.619745107740568, 51.96177160979657)))
+geo_uni <- c(bielefeld,clausthal,dortmund,halle,hannover,magdeburg,muenster)
+st_crs(geo_uni) ="WGS84"
+universities<-data.frame(Uni=c("Bielefeld","Clausthal","Dortmund","Halle","Hannover","Magedeburg","Muenster"), plz_uni_station=c("33602","38678","44137","06112","30159","39104","48143"),geo_uni)
+
+
+```
+
+
+## Compute Distances between them 
+```{r}
+library(tidyr)
+
+distances<-full_join(final ,universities, by=character())
+#Cross Join YIEKS
+distances$dist<-st_distance(distances$geometry.y,distances$pop_centroid,by_element=TRUE)
+distances$dist <- as.numeric(distances$dist)
+distances<-distances[distances$dist<250000,]
+distances<-distances[!is.na(distances$plz),]
+
+save(distances, file="./mesaras_zip_codes")
+```
+
+
+# Analyse Distances vs Commuting Times
+```{r fig.height=12, fig.width=12}
+load("./distances_around_universities_with_times_backup.Rdata.RData")
+distances$Uni[distances$Uni =='Magedeburg'] <- "Magdeburg"
+test<-distances[distances$pop_time!=Inf,]
+test<-test[test$cen_time!=Inf,]
+
+# Correlation insgesamt
+print("Korrelation insgesamt")
+cor(test$dist,test$pop_time)
+cor(test$dist,test$cen_time)
+
+print("Korrelation unter 20km N=267")
+#Correlation für Nahe orte 
+cor(test[test$dist<20000,]$dist,test[test$dist<20000,]$pop_time)
+cor(test[test$dist<20000,]$dist,test[test$dist<20000,]$cen_time)
+#correlation für Ferne Orte
+
+print("Korrelation unter 50km, N=1007")
+#Correlation für Nahe orte 
+cor(test[test$dist<50000,]$dist,test[test$dist<50000,]$pop_time)
+cor(test[test$dist<50000,]$dist,test[test$dist<50000,]$cen_time)
+#correlation für Ferne Orte
+
+
+print("Korrelation unter 100km, N=3600")
+#Correlation für Nahe orte 
+cor(test[test$dist<100000,]$dist,test[test$dist<100000,]$pop_time)
+cor(test[test$dist<100000,]$dist,test[test$dist<100000,]$cen_time)
+#correlation für Ferne Orte
+
+print("Korrelation über 150km N=11475")
+cor(test[test$dist>150000,]$dist,test[test$dist>150000,]$pop_time)
+cor(test[test$dist>150000,]$dist,test[test$dist>150000,]$cen_time)
+library(ggplot2)
+
+
+#Create Plot for Correlation.
+scatter<- ggplot(test[test$dist<150000 & test$pop_time<400 ,], aes(x=dist, y=pop_time, color=Uni)) +
+  geom_point(shape=4,alpha=0.9) + geom_rug() 
+
+xdensity <- ggplot(test[test$dist<150000 & test$pop_time<400 ,], aes(dist, fill=Uni)) + geom_density(alpha=.5)
+ydensity <- ggplot(test[test$dist<150000 & test$pop_time<400 ,], aes(pop_time, fill=Uni)) + geom_density(alpha=.5) +coord_flip()
+blankPlot <- ggplot()+geom_blank(aes(1,1))+
+  theme(plot.background = element_blank(), 
+   panel.grid.major = element_blank(),
+   panel.grid.minor = element_blank(), 
+   panel.border = element_blank(),
+   panel.background = element_blank(),
+   axis.title.x = element_blank(),
+   axis.title.y = element_blank(),
+   axis.text.x = element_blank(), 
+   axis.text.y = element_blank(),
+   axis.ticks = element_blank()
+     )
+library("gridExtra")
+grid.arrange(xdensity, blankPlot, scatter, ydensity, 
+        ncol=2, nrow=2, widths=c(4, 2), heights=c(2, 4))
+
+```
+
+
+# Add information on Student tickets
+
+```{r}
+distances$ticket_covered <- FALSE
+
+### Add tickets for NRW (incl. Hameln and Osnabrück)
+zip_nrw <- read.delim("~/Desktop/ZIP-Codes/zip_nrw.csv")
+distances$ticket_covered[distances$plz %in% c(zip_nrw$Postleitzahl, "31785", "49074") & distances$Uni %in% c("Muenster","Bielefeld","Dortmund")] <- TRUE
+
+### Add special Cases for Bielefeld: Melle, Osnabrück Centre, Bückeburg, Stadthagen, Haste
+# http://semesterticket-bielefeld.de/
+distances$ticket_covered[distances$plz %in% c("49324","49326","49328","49074","49088","49084","49080","31685","31655","31559") & distances$Uni %in% c("Bielefeld")] <- TRUE
+
+### Add special Cases for Münster: Lingen Leschede Selzbergen, Ostnabrück Hasetor Osnabrück, Hasbergen, Natrup Hagen
+#https://www.asta.ms/semesterticket
+distances$ticket_covered[distances$plz %in% c("49808","49809","48488","48499","49074","49088","49084","49078", "49205", "49170") & distances$Uni %in% c("Muenster")] <- TRUE
+
+### Add special Cases for Dortmund (no special cases in Germany, only netherlands: https://asta-dortmund.de/wp-content/uploads/2022/09/Karte_VRR_NRW-1536x1152.png
+
+### Add cases for Magdeburg (only city of magdeburg and sourrings)
+distances$ticket_covered[distances$plz %in% c("39104","39106","39108","39110","39112","39114","39116","39118","39120","39122","39124","39126","39128", "39130","39179") & distances$Uni %in% c("Magdeburg")] <- TRUE
+
+### Add cases for Halle (whole Travel association around leipzig) 
+#https://web.archive.org/web/20130926183942/http://www.studentenwerk-halle.de/wir-ueber-uns/semesterbeitrag/# 
+
+
+distances$ticket_covered[distances$plz %in% c("06108","06110","06112","06114","06116","06118","06120","06122","06124","06126","06128","06130","06132") & distances$Uni %in% c("Halle")] <- TRUE
+
+### Clausthal has no special student ticket
+
+### Add cases for Hannover  
+#https://web.archive.org/web/20130514181819/https://www.asta-hannover.de/service/mobilitat/semesterticket/
+hamburg_plz <- read.delim("~/Desktop/ZIP-Codes/hamburg_plz", comment.char="#")
+niedersachsen_plz <- read.delim("~/Desktop/ZIP-Codes/niedersachsen_plz", comment.char="#")
+
+distances$ticket_covered[distances$plz %in% niedersachsen_plz$Postleitzahl & distances$Uni %in% c("Hannover")] <- TRUE
+
+distances$ticket_covered[distances$plz %in% hamburg_plz$Postleitzahl & distances$Uni %in% c("Hannover")] <- TRUE
+
+```
+#Make a nice CSV data set out of it
+
+
+```{r}
+library(sf)
+library(dplyr)
+colnames(distances)<-c("plz","uni","uni_plz","plz_geometry","plz_centroid","plz_pop_centroid","uni_centroid","distance","travel_time_pop_centroid","travel_time_centroid","ticket_covered")
+
+save.image("for_statistics.Rmd")
+
+export <- st_drop_geometry(distances)
+export <- export %>% select(-plz_geometry)
+export <- cbind(export,st_coordinates(export$plz_centroid))
+export <- cbind(export,st_coordinates(export$plz_pop_centroid))
+export <- cbind(export,st_coordinates(export$uni_centroid))
+
+colnames(export)<-c("plz","uni","uni_plz","plz_centroid","plz_pop_centroid","uni_centroid","distance","travel_time_pop_centroid","travel_time_centroid","ticket_covered","plz_centroid_x","plz_centroid_y","plz_pop_centroid_x","plz_pop_centroid_y","uni_centroid_x","uni_centroid_y")
+
+import_gesis<- export[,c(1:3,7:16)]
+write.csv(import_gesis,"~/Desktop/ZIP-Codes/import_gesis.csv", eol="\r\n", row.names=FALSE)
+```

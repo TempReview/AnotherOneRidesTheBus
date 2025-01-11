@@ -1,0 +1,401 @@
+Kennziffer,Raumeinheit,Aggregat,Gästeübernachtungen in Beherbergungsbetrieben 2013,Kinos 2017,Öffentliche Bäder 2017
+01001,"Flensburg, Stadt",Kreise,2.8,2.0,2.0
+01002,"Kiel, Landeshauptstadt",Kreise,2.5,6.0,7.0
+01003,"Lübeck, Hansestadt",Kreise,6.5,3.0,9.0
+01004,"Neumünster, Stadt",Kreise,1.8,3.0,3.0
+01051,Dithmarschen,Kreise,9.4,3.0,20.0
+01053,Herzogtum Lauenburg,Kreise,3.1,3.0,13.0
+01054,Nordfriesland,Kreise,42.1,7.0,38.0
+01055,Ostholstein,Kreise,28.5,7.0,20.0
+01056,Pinneberg,Kreise,1.9,5.0,13.0
+01057,Plön,Kreise,7.5,2.0,7.0
+01058,Rendsburg-Eckernförde,Kreise,5.3,4.0,29.0
+01059,Schleswig-Flensburg,Kreise,5.0,2.0,23.0
+01060,Segeberg,Kreise,2.8,2.0,21.0
+01061,Steinburg,Kreise,0.8,1.0,19.0
+01062,Stormarn,Kreise,1.6,2.0,9.0
+02000,"Hamburg, Freie und Hansestadt",Kreise,6.6,27.0,64.0
+03101,"Braunschweig, Stadt",Kreise,2.2,3.0,13.0
+03102,"Salzgitter, Stadt",Kreise,1.6,3.0,6.0
+03103,"Wolfsburg, Stadt",Kreise,4.0,3.0,9.0
+03151,Gifhorn,Kreise,2.4,1.0,14.0
+03153,Goslar,Kreise,17.2,2.0,23.0
+03154,Helmstedt,Kreise,1.9,2.0,6.0
+03155,Northeim,Kreise,3.6,4.0,16.0
+03157,Peine,Kreise,0.8,1.0,14.0
+03158,Wolfenbüttel,Kreise,1.2,2.0,12.0
+03159,Göttingen,Kreise,5.0,3.0,41.0
+03241,Region Hannover,Kreise,3.3,12.0,75.0
+03251,Diepholz,Kreise,1.2,5.0,30.0
+03252,Hameln-Pyrmont,Kreise,8.3,2.0,19.0
+03254,Hildesheim,Kreise,2.1,2.0,34.0
+03255,Holzminden,Kreise,2.4,1.0,10.0
+03256,Nienburg (Weser),Kreise,2.3,2.0,22.0
+03257,Schaumburg,Kreise,4.9,4.0,15.0
+03351,Celle,Kreise,3.6,2.0,20.0
+03352,Cuxhaven,Kreise,11.7,1.0,30.0
+03353,Harburg,Kreise,2.7,3.0,30.0
+03354,Lüchow-Dannenberg,Kreise,4.9,2.0,11.0
+03355,Lüneburg,Kreise,3.3,2.0,12.0
+03356,Osterholz,Kreise,1.3,2.0,15.0
+03357,Rotenburg (Wümme),Kreise,2.8,2.0,14.0
+03358,Heidekreis,Kreise,17.9,3.0,20.0
+03359,Stade,Kreise,2.2,1.0,10.0
+03360,Uelzen,Kreise,8.4,1.0,11.0
+03361,Verden,Kreise,2.3,2.0,10.0
+03401,"Delmenhorst, Stadt",Kreise,0.7,1.0,1.0
+03402,"Emden, Stadt",Kreise,3.0,3.0,5.0
+03403,"Oldenburg (Oldenburg), Stadt",Kreise,1.9,5.0,7.0
+03404,"Osnabrück, Stadt",Kreise,2.1,5.0,10.0
+03405,"Wilhelmshaven, Stadt",Kreise,3.9,1.0,6.0
+03451,Ammerland,Kreise,6.5,0.0,18.0
+03452,Aurich,Kreise,19.4,6.0,32.0
+03453,Cloppenburg,Kreise,2.3,1.0,17.0
+03454,Emsland,Kreise,6.2,5.0,45.0
+03455,Friesland,Kreise,20.7,3.0,17.0
+03456,Grafschaft Bentheim,Kreise,6.6,1.0,19.0
+03457,Leer,Kreise,9.2,1.0,7.0
+03458,Oldenburg,Kreise,2.0,1.0,16.0
+03459,Osnabrück,Kreise,4.5,3.0,37.0
+03460,Vechta,Kreise,2.3,4.0,11.0
+03461,Wesermarsch,Kreise,8.3,2.0,11.0
+03462,Wittmund,Kreise,42.8,2.0,14.0
+04011,"Bremen, Stadt",Kreise,3.1,8.0,25.0
+04012,"Bremerhaven, Stadt",Kreise,3.2,2.0,5.0
+05111,"Düsseldorf, Stadt",Kreise,7.1,9.0,21.0
+05112,"Duisburg, Stadt",Kreise,0.9,2.0,18.0
+05113,"Essen, Stadt",Kreise,2.4,6.0,22.0
+05114,"Krefeld, Stadt",Kreise,1.0,2.0,13.0
+05116,"Mönchengladbach, Stadt",Kreise,0.9,2.0,9.0
+05117,"Mülheim an der Ruhr, Stadt",Kreise,0.9,3.0,6.0
+05119,"Oberhausen, Stadt",Kreise,2.2,3.0,11.0
+05120,"Remscheid, Stadt",Kreise,1.0,0.0,5.0
+05122,"Solingen, Klingenstadt",Kreise,0.7,2.0,4.0
+05124,"Wuppertal, Stadt",Kreise,1.6,5.0,18.0
+05154,Kleve,Kreise,2.9,3.0,20.0
+05158,Mettmann,Kreise,1.9,3.0,24.0
+05162,Rhein-Kreis Neuss,Kreise,2.1,6.0,24.0
+05166,Viersen,Kreise,1.3,1.0,19.0
+05170,Wesel,Kreise,1.6,3.0,26.0
+05314,"Bonn, Stadt",Kreise,4.5,7.0,15.0
+05315,"Köln, Stadt",Kreise,4.9,21.0,32.0
+05316,"Leverkusen, Stadt",Kreise,1.4,3.0,6.0
+05334,Städteregion Aachen,Kreise,2.6,9.0,35.0
+05358,Düren,Kreise,1.5,1.0,36.0
+05362,Rhein-Erft-Kreis,Kreise,2.5,7.0,31.0
+05366,Euskirchen,Kreise,4.5,1.0,21.0
+05370,Heinsberg,Kreise,0.9,3.0,15.0
+05374,Oberbergischer Kreis,Kreise,3.2,2.0,26.0
+05378,Rheinisch-Bergischer Kreis,Kreise,1.7,2.0,18.0
+05382,Rhein-Sieg-Kreis,Kreise,2.3,6.0,33.0
+05512,"Bottrop, Stadt",Kreise,0.7,1.0,6.0
+05513,"Gelsenkirchen, Stadt",Kreise,1.1,2.0,11.0
+05515,"Münster, Stadt",Kreise,4.6,3.0,17.0
+05554,Borken,Kreise,1.5,6.0,25.0
+05558,Coesfeld,Kreise,2.3,3.0,16.0
+05562,Recklinghausen,Kreise,1.0,3.0,38.0
+05566,Steinfurt,Kreise,1.7,5.0,40.0
+05570,Warendorf,Kreise,1.5,5.0,25.0
+05711,"Bielefeld, Stadt",Kreise,1.7,6.0,18.0
+05754,Gütersloh,Kreise,1.5,3.0,29.0
+05758,Herford,Kreise,1.6,4.0,16.0
+05762,Höxter,Kreise,7.5,4.0,20.0
+05766,Lippe,Kreise,4.6,4.0,48.0
+05770,Minden-Lübbecke,Kreise,4.7,3.0,38.0
+05774,Paderborn,Kreise,3.0,4.0,23.0
+05911,"Bochum, Stadt",Kreise,1.8,6.0,20.0
+05913,"Dortmund, Stadt",Kreise,1.8,7.0,18.0
+05914,"Hagen, Stadt der FernUniversität",Kreise,1.4,2.0,11.0
+05915,"Hamm, Stadt",Kreise,0.8,1.0,17.0
+05916,"Herne, Stadt",Kreise,0.4,1.0,9.0
+05954,Ennepe-Ruhr-Kreis,Kreise,1.6,6.0,34.0
+05958,Hochsauerlandkreis,Kreise,13.9,6.0,39.0
+05962,Märkischer Kreis,Kreise,1.0,6.0,39.0
+05966,Olpe,Kreise,4.0,2.0,18.0
+05970,Siegen-Wittgenstein,Kreise,3.0,5.0,32.0
+05974,Soest,Kreise,5.3,4.0,29.0
+05978,Unna,Kreise,1.0,3.0,31.0
+06411,"Darmstadt, Wissenschaftsstadt",Kreise,4.0,5.0,12.0
+06412,"Frankfurt am Main, Stadt",Kreise,10.7,14.0,19.0
+06413,"Offenbach am Main, Stadt",Kreise,3.3,2.0,3.0
+06414,"Wiesbaden, Landeshauptstadt",Kreise,4.1,7.0,10.0
+06431,Bergstraße,Kreise,2.7,4.0,17.0
+06432,Darmstadt-Dieburg,Kreise,1.9,1.0,20.0
+06433,Groß-Gerau,Kreise,4.1,2.0,20.0
+06434,Hochtaunuskreis,Kreise,5.7,1.0,13.0
+06435,Main-Kinzig-Kreis,Kreise,3.4,4.0,34.0
+06436,Main-Taunus-Kreis,Kreise,3.2,5.0,10.0
+06437,Odenwaldkreis,Kreise,4.5,0.0,22.0
+06438,Offenbach,Kreise,2.6,4.0,20.0
+06439,Rheingau-Taunus-Kreis,Kreise,6.7,3.0,12.0
+06440,Wetteraukreis,Kreise,3.8,8.0,16.0
+06531,Gießen,Kreise,1.7,4.0,24.0
+06532,Lahn-Dill-Kreis,Kreise,1.8,2.0,27.0
+06533,Limburg-Weilburg,Kreise,3.3,3.0,20.0
+06534,Marburg-Biedenkopf,Kreise,2.6,4.0,27.0
+06535,Vogelsbergkreis,Kreise,4.5,2.0,19.0
+06611,"Kassel, documenta-Stadt",Kreise,4.3,3.0,9.0
+06631,Fulda,Kreise,7.1,2.0,21.0
+06632,Hersfeld-Rotenburg,Kreise,9.7,2.0,18.0
+06633,Kassel,Kreise,3.1,1.0,32.0
+06634,Schwalm-Eder-Kreis,Kreise,3.4,3.0,35.0
+06635,Waldeck-Frankenberg,Kreise,20.4,2.0,34.0
+06636,Werra-Meißner-Kreis,Kreise,7.2,3.0,15.0
+07111,"Koblenz, kreisfreie Stadt",Kreise,5.6,3.0,6.0
+07131,Ahrweiler,Kreise,10.8,2.0,8.0
+07132,Altenkirchen (Westerwald),Kreise,1.6,1.0,10.0
+07133,Bad Kreuznach,Kreise,6.3,1.0,21.0
+07134,Birkenfeld,Kreise,5.4,1.0,7.0
+07135,Cochem-Zell,Kreise,25.4,1.0,11.0
+07137,Mayen-Koblenz,Kreise,2.9,1.0,14.0
+07138,Neuwied,Kreise,1.6,3.0,12.0
+07140,Rhein-Hunsrück-Kreis,Kreise,7.8,2.0,10.0
+07141,Rhein-Lahn-Kreis,Kreise,6.5,3.0,17.0
+07143,Westerwaldkreis,Kreise,3.4,2.0,20.0
+07211,"Trier, kreisfreie Stadt",Kreise,6.8,3.0,6.0
+07231,Bernkastel-Wittlich,Kreise,14.3,1.0,12.0
+07232,Eifelkreis Bitburg-Prüm,Kreise,6.7,2.0,17.0
+07233,Vulkaneifel,Kreise,20.6,2.0,11.0
+07235,Trier-Saarburg,Kreise,7.0,0.0,13.0
+07311,"Frankenthal (Pfalz), kreisfreie Stadt",Kreise,1.7,1.0,2.0
+07312,"Kaiserslautern, kreisfreie Stadt",Kreise,2.1,3.0,6.0
+07313,"Landau in der Pfalz, kreisfreie Stadt",Kreise,1.5,0.0,3.0
+07314,"Ludwigshafen am Rhein, kreisfreie Stadt",Kreise,1.6,1.0,8.0
+07315,"Mainz, kreisfreie Stadt",Kreise,4.3,5.0,5.0
+07316,"Neustadt an der Weinstraße, kreisfreie Stadt",Kreise,3.3,2.0,4.0
+07317,"Pirmasens, kreisfreie Stadt",Kreise,1.2,1.0,4.0
+07318,"Speyer, kreisfreie Stadt",Kreise,5.1,1.0,8.0
+07319,"Worms, kreisfreie Stadt",Kreise,1.7,1.0,5.0
+07320,"Zweibrücken, kreisfreie Stadt",Kreise,1.4,1.0,3.0
+07331,Alzey-Worms,Kreise,1.0,1.0,10.0
+07332,Bad Dürkheim,Kreise,5.9,1.0,10.0
+07333,Donnersbergkreis,Kreise,1.7,0.0,5.0
+07334,Germersheim,Kreise,1.1,0.0,13.0
+07335,Kaiserslautern,Kreise,2.3,2.0,16.0
+07336,Kusel,Kreise,1.2,1.0,10.0
+07337,Südliche Weinstraße,Kreise,7.2,3.0,11.0
+07338,Rhein-Pfalz-Kreis,Kreise,0.9,1.0,18.0
+07339,Mainz-Bingen,Kreise,1.9,1.0,7.0
+07340,Südwestpfalz,Kreise,3.2,1.0,18.0
+08111,"Stuttgart, Stadtkreis",Kreise,5.3,13.0,37.0
+08115,Böblingen,Kreise,2.6,7.0,26.0
+08116,Esslingen,Kreise,2.6,7.0,40.0
+08117,Göppingen,Kreise,2.1,2.0,26.0
+08118,Ludwigsburg,Kreise,1.8,7.0,40.0
+08119,Rems-Murr-Kreis,Kreise,1.7,9.0,39.0
+08121,"Heilbronn, Stadtkreis",Kreise,2.4,2.0,7.0
+08125,Heilbronn,Kreise,3.5,3.0,43.0
+08126,Hohenlohekreis,Kreise,3.5,3.0,28.0
+08127,Schwäbisch Hall,Kreise,2.8,5.0,31.0
+08128,Main-Tauber-Kreis,Kreise,6.7,4.0,22.0
+08135,Heidenheim,Kreise,1.7,2.0,14.0
+08136,Ostalbkreis,Kreise,2.3,5.0,34.0
+08211,"Baden-Baden, Stadtkreis",Kreise,16.7,2.0,9.0
+08212,"Karlsruhe, Stadtkreis",Kreise,3.4,4.0,19.0
+08215,Karlsruhe,Kreise,1.9,3.0,56.0
+08216,Rastatt,Kreise,2.5,4.0,27.0
+08221,"Heidelberg, Stadtkreis",Kreise,7.9,4.0,10.0
+08222,"Mannheim, Stadtkreis",Kreise,3.9,5.0,15.0
+08225,Neckar-Odenwald-Kreis,Kreise,3.4,1.0,19.0
+08226,Rhein-Neckar-Kreis,Kreise,2.5,8.0,56.0
+08231,"Pforzheim, Stadtkreis",Kreise,1.9,3.0,5.0
+08235,Calw,Kreise,8.5,3.0,21.0
+08236,Enzkreis,Kreise,1.1,1.0,17.0
+08237,Freudenstadt,Kreise,14.7,2.0,23.0
+08311,"Freiburg im Breisgau, Stadtkreis",Kreise,6.3,5.0,20.0
+08315,Breisgau-Hochschwarzwald,Kreise,18.3,6.0,55.0
+08316,Emmendingen,Kreise,3.8,2.0,18.0
+08317,Ortenaukreis,Kreise,8.1,9.0,49.0
+08325,Rottweil,Kreise,2.2,3.0,16.0
+08326,Schwarzwald-Baar-Kreis,Kreise,7.7,6.0,29.0
+08327,Tuttlingen,Kreise,1.6,2.0,9.0
+08335,Konstanz,Kreise,7.3,4.0,38.0
+08336,Lörrach,Kreise,5.4,7.0,19.0
+08337,Waldshut,Kreise,8.6,2.0,30.0
+08415,Reutlingen,Kreise,3.7,5.0,34.0
+08416,Tübingen,Kreise,1.7,4.0,18.0
+08417,Zollernalbkreis,Kreise,1.6,4.0,36.0
+08421,"Ulm, Stadtkreis",Kreise,4.3,4.0,9.0
+08425,Alb-Donau-Kreis,Kreise,2.6,1.0,20.0
+08426,Biberach,Kreise,3.7,2.0,14.0
+08435,Bodenseekreis,Kreise,13.8,5.0,29.0
+08436,Ravensburg,Kreise,6.1,6.0,64.0
+08437,Sigmaringen,Kreise,4.7,3.0,27.0
+09161,Ingolstadt,Kreise,3.6,4.0,6.0
+09162,"München, Landeshauptstadt",Kreise,9.2,16.0,29.0
+09163,"Rosenheim, Stadt",Kreise,2.6,1.0,6.0
+09171,Altötting,Kreise,2.2,2.0,11.0
+09172,Berchtesgadener Land,Kreise,25.9,2.0,13.0
+09173,Bad Tölz-Wolfratshausen,Kreise,9.4,3.0,11.0
+09174,Dachau,Kreise,1.9,1.0,6.0
+09175,Ebersberg,Kreise,2.6,2.0,18.0
+09176,Eichstätt,Kreise,6.5,1.0,10.0
+09177,Erding,Kreise,7.9,3.0,8.0
+09178,Freising,Kreise,4.8,1.0,8.0
+09179,Fürstenfeldbruck,Kreise,1.3,2.0,14.0
+09180,Garmisch-Partenkirchen,Kreise,34.3,4.0,13.0
+09181,Landsberg am Lech,Kreise,2.3,6.0,8.0
+09182,Miesbach,Kreise,22.6,3.0,10.0
+09183,Mühldorf a.Inn,Kreise,1.5,2.0,11.0
+09184,München,Kreise,6.7,3.0,22.0
+09185,Neuburg-Schrobenhausen,Kreise,1.5,3.0,8.0
+09186,Pfaffenhofen a.d.Ilm,Kreise,1.8,1.0,10.0
+09187,Rosenheim,Kreise,8.8,4.0,21.0
+09188,Starnberg,Kreise,5.2,8.0,8.0
+09189,Traunstein,Kreise,15.9,3.0,32.0
+09190,Weilheim-Schongau,Kreise,4.2,3.0,17.0
+09261,"Landshut, Stadt",Kreise,3.6,2.0,4.0
+09262,"Passau, Stadt",Kreise,8.5,3.0,2.0
+09263,Straubing,Kreise,2.8,1.0,1.0
+09271,Deggendorf,Kreise,3.4,2.0,11.0
+09272,Freyung-Grafenau,Kreise,19.4,1.0,15.0
+09273,Kelheim,Kreise,6.7,1.0,18.0
+09274,Landshut,Kreise,1.5,1.0,17.0
+09275,Passau,Kreise,22.9,2.0,33.0
+09276,Regen,Kreise,28.2,2.0,9.0
+09277,Rottal-Inn,Kreise,6.9,3.0,23.0
+09278,Straubing-Bogen,Kreise,5.7,0.0,18.0
+09279,Dingolfing-Landau,Kreise,1.8,2.0,16.0
+09361,Amberg,Kreise,1.6,3.0,2.0
+09362,"Regensburg, Stadt",Kreise,6.6,6.0,4.0
+09363,Weiden i.d.OPf.,Kreise,1.8,3.0,5.0
+09371,Amberg-Sulzbach,Kreise,2.5,1.0,17.0
+09372,Cham,Kreise,14.3,1.0,25.0
+09373,Neumarkt i.d.OPf.,Kreise,3.2,3.0,9.0
+09374,Neustadt a.d.Waldnaab,Kreise,2.2,0.0,21.0
+09375,Regensburg,Kreise,1.9,0.0,5.0
+09376,Schwandorf,Kreise,2.4,5.0,15.0
+09377,Tirschenreuth,Kreise,4.1,1.0,15.0
+09461,"Bamberg, Stadt",Kreise,7.3,3.0,4.0
+09462,"Bayreuth, Stadt",Kreise,4.4,1.0,4.0
+09463,"Coburg, Stadt",Kreise,2.8,1.0,2.0
+09464,"Hof, Stadt",Kreise,3.1,2.0,5.0
+09471,Bamberg,Kreise,2.5,0.0,11.0
+09472,Bayreuth,Kreise,6.7,1.0,15.0
+09473,Coburg,Kreise,3.5,0.0,6.0
+09474,Forchheim,Kreise,3.3,1.0,10.0
+09475,Hof,Kreise,4.9,0.0,20.0
+09476,Kronach,Kreise,3.0,1.0,15.0
+09477,Kulmbach,Kreise,3.0,1.0,9.0
+09478,Lichtenfels,Kreise,9.2,1.0,11.0
+09479,Wunsiedel i.Fichtelgebirge,Kreise,4.2,2.0,13.0
+09561,"Ansbach, Stadt",Kreise,2.6,3.0,1.0
+09562,Erlangen,Kreise,4.7,3.0,6.0
+09563,"Fürth, Stadt",Kreise,2.0,3.0,5.0
+09564,Nürnberg,Kreise,5.4,8.0,13.0
+09565,Schwabach,Kreise,2.0,2.0,2.0
+09571,Ansbach,Kreise,6.1,1.0,51.0
+09572,Erlangen-Höchstadt,Kreise,3.0,1.0,6.0
+09573,Fürth,Kreise,1.2,0.0,7.0
+09574,Nürnberger Land,Kreise,2.4,1.0,13.0
+09575,Neustadt a.d.Aisch-Bad Windsheim,Kreise,6.0,1.0,15.0
+09576,Roth,Kreise,2.5,3.0,14.0
+09577,Weißenburg-Gunzenhausen,Kreise,7.9,3.0,21.0
+09661,"Aschaffenburg, Stadt",Kreise,1.9,2.0,7.0
+09662,"Schweinfurt, Stadt",Kreise,3.4,3.0,5.0
+09663,"Würzburg, Stadt",Kreise,6.7,3.0,9.0
+09671,Aschaffenburg,Kreise,2.7,0.0,22.0
+09672,Bad Kissingen,Kreise,21.2,2.0,8.0
+09673,Rhön-Grabfeld,Kreise,10.0,2.0,15.0
+09674,Haßberge,Kreise,2.6,1.0,12.0
+09675,Kitzingen,Kreise,6.8,1.0,10.0
+09676,Miltenberg,Kreise,2.1,2.0,13.0
+09677,Main-Spessart,Kreise,3.7,1.0,16.0
+09678,Schweinfurt,Kreise,1.0,0.0,10.0
+09679,Würzburg,Kreise,2.6,1.0,18.0
+09761,"Augsburg, Stadt",Kreise,2.6,5.0,13.0
+09762,Kaufbeuren,Kreise,2.0,2.0,3.0
+09763,Kempten (Allgäu),Kreise,3.0,1.0,5.0
+09764,Memmingen,Kreise,2.4,2.0,2.0
+09771,Aichach-Friedberg,Kreise,1.5,1.0,9.0
+09772,Augsburg,Kreise,1.8,2.0,33.0
+09773,Dillingen a.d.Donau,Kreise,2.5,2.0,9.0
+09774,Günzburg,Kreise,4.1,2.0,14.0
+09775,Neu-Ulm,Kreise,2.4,2.0,17.0
+09776,Lindau (Bodensee),Kreise,21.5,4.0,14.0
+09777,Ostallgäu,Kreise,19.7,2.0,14.0
+09778,Unterallgäu,Kreise,6.8,5.0,22.0
+09779,Donau-Ries,Kreise,3.0,4.0,12.0
+09780,Oberallgäu,Kreise,36.2,4.0,40.0
+10041,Regionalverband Saarbrücken,Kreise,1.8,7.0,22.0
+10042,Merzig-Wadern,Kreise,5.6,1.0,10.0
+10043,Neunkirchen,Kreise,1.6,2.0,8.0
+10044,Saarlouis,Kreise,1.2,4.0,14.0
+10045,Saarpfalz-Kreis,Kreise,2.6,3.0,8.0
+10046,St. Wendel,Kreise,6.5,2.0,9.0
+11000,"Berlin, Stadt",Kreise,7.9,83.0,111.0
+12051,"Brandenburg an der Havel, Stadt",Kreise,2.4,3.0,4.0
+12052,"Cottbus, Stadt",Kreise,2.3,6.0,5.0
+12053,"Frankfurt (Oder), Stadt",Kreise,2.9,3.0,7.0
+12054,"Potsdam, Stadt",Kreise,6.2,4.0,11.0
+12060,Barnim,Kreise,4.7,2.0,13.0
+12061,Dahme-Spreewald,Kreise,8.5,2.0,10.0
+12062,Elbe-Elster,Kreise,2.1,1.0,10.0
+12063,Havelland,Kreise,1.4,3.0,10.0
+12064,Märkisch-Oderland,Kreise,4.1,1.0,9.0
+12065,Oberhavel,Kreise,2.2,1.0,9.0
+12066,Oberspreewald-Lausitz,Kreise,5.1,1.0,12.0
+12067,Oder-Spree,Kreise,6.4,4.0,13.0
+12068,Ostprignitz-Ruppin,Kreise,10.3,3.0,12.0
+12069,Potsdam-Mittelmark,Kreise,5.3,2.0,20.0
+12070,Prignitz,Kreise,3.1,3.0,12.0
+12071,Spree-Neiße,Kreise,5.6,2.0,13.0
+12072,Teltow-Fläming,Kreise,3.5,1.0,10.0
+12073,Uckermark,Kreise,7.1,3.0,5.0
+13003,Rostock,Kreise,8.9,5.0,14.0
+13004,Schwerin,Kreise,3.9,2.0,8.0
+13071,Mecklenburgische Seenplatte,Kreise,13.0,10.0,170.0
+13072,Landkreis Rostock,Kreise,22.1,3.0,85.0
+13073,Vorpommern-Rügen,Kreise,40.6,6.0,28.0
+13074,Nordwestmecklenburg,Kreise,13.1,2.0,35.0
+13075,Vorpommern-Greifswald,Kreise,23.9,4.0,33.0
+13076,Ludwigslust-Parchim,Kreise,5.5,2.0,76.0
+14511,"Chemnitz, Stadt",Kreise,2.2,8.0,10.0
+14521,Erzgebirgskreis,Kreise,4.9,6.0,37.0
+14522,Mittelsachsen,Kreise,2.4,3.0,33.0
+14523,Vogtlandkreis,Kreise,5.7,2.0,28.0
+14524,Zwickau,Kreise,1.6,7.0,38.0
+14612,"Dresden, Stadt",Kreise,7.8,13.0,17.0
+14625,Bautzen,Kreise,2.5,5.0,36.0
+14626,Görlitz,Kreise,4.1,9.0,41.0
+14627,Meißen,Kreise,2.8,4.0,16.0
+14628,Sächsische Schweiz-Osterzgebirge,Kreise,10.3,2.0,27.0
+14713,"Leipzig, Stadt",Kreise,5.1,13.0,17.0
+14729,Leipzig,Kreise,3.1,2.0,28.0
+14730,Nordsachsen,Kreise,3.8,1.0,21.0
+15001,"Dessau-Roßlau, Stadt",Kreise,2.2,2.0,12.0
+15002,"Halle (Saale), Stadt",Kreise,1.5,6.0,10.0
+15003,"Magdeburg, Landeshauptstadt",Kreise,2.3,7.0,10.0
+15081,Altmarkkreis Salzwedel,Kreise,3.9,1.0,14.0
+15082,Anhalt-Bitterfeld,Kreise,1.2,1.0,11.0
+15083,Börde,Kreise,2.4,0.0,23.0
+15084,Burgenlandkreis,Kreise,3.4,2.0,15.0
+15085,Harz,Kreise,11.2,3.0,36.0
+15086,Jerichower Land,Kreise,1.5,2.0,12.0
+15087,Mansfeld-Südharz,Kreise,2.2,1.0,24.0
+15088,Saalekreis,Kreise,2.0,2.0,14.0
+15089,Salzlandkreis,Kreise,1.8,2.0,30.0
+15090,Stendal,Kreise,1.8,1.0,22.0
+15091,Wittenberg,Kreise,4.6,0.0,15.0
+16051,"Erfurt, Stadt",Kreise,3.7,3.0,10.0
+16052,"Gera, Stadt",Kreise,1.8,3.0,3.0
+16053,"Jena, Stadt",Kreise,2.8,3.0,4.0
+16054,"Suhl, Stadt",Kreise,7.0,1.0,3.0
+16055,"Weimar, Stadt",Kreise,10.4,4.0,4.0
+16061,Eichsfeld,Kreise,3.6,2.0,13.0
+16062,Nordhausen,Kreise,2.0,2.0,14.0
+16063,Wartburgkreis,Kreise,6.5,2.0,24.0
+16064,Unstrut-Hainich-Kreis,Kreise,3.7,2.0,9.0
+16065,Kyffhäuserkreis,Kreise,3.8,2.0,15.0
+16066,Schmalkalden-Meiningen,Kreise,5.6,0.0,17.0
+16067,Gotha,Kreise,6.6,4.0,17.0
+16068,Sömmerda,Kreise,1.2,0.0,9.0
+16069,Hildburghausen,Kreise,6.0,1.0,12.0
+16070,Ilm-Kreis,Kreise,3.6,1.0,14.0
+16071,Weimarer Land,Kreise,7.0,0.0,12.0
+16072,Sonneberg,Kreise,3.1,0.0,10.0
+16073,Saalfeld-Rudolstadt,Kreise,3.9,3.0,18.0
+16074,Saale-Holzland-Kreis,Kreise,4.3,1.0,8.0
+16075,Saale-Orla-Kreis,Kreise,4.0,2.0,13.0
+16076,Greiz,Kreise,1.2,1.0,14.0
+16077,Altenburger Land,Kreise,1.6,1.0,11.0

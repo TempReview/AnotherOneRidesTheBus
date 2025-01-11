@@ -1,0 +1,66 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+Load different Datasets
+```{r}
+library(geojsonR)
+library(sf)
+library(rgeos)
+
+plz<-geojson_sf( "./plz-5stellig.geojson")
+community <- read_sf("./Gemeinden/vg250_01-01.utm32s.shape.ebenen/vg250_ebenen_0101/VG250_GEM.shx")
+
+plz<-st_transform(plz,"WGS84")
+community<-st_transform(community,"WGS84")
+
+library(readr)
+Mesars_regional_indicators <- read_delim("Mesars_regional_indicators.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+Clean up INKAR Data and Merge with community data
+```{r}
+Mesars_regional_indicators<-Mesars_regional_indicators[2:nrow(Mesars_regional_indicators),]
+community$gemeindeverband<-substr(community$ARS,1,9)
+
+```
+
+Find Geometric Scenter of each PLZ area:
+
+```{r}
+plz$centroid <- st_centroid(plz$geometry)
+plz$community <- "-999"
+for(i in 1:nrow(community))
+{
+plz$verband[st_within(plz$centroid,community$geometry[i],sparse=FALSE, prepared=TRUE)]<- community$gemeindeverband[i]
+if(i%%100==0){
+ print(i)
+if(i==6300){sf_use_s2(FALSE)} # BUGFIX (some error in between 6400 - 5600)
+if(i==6500){sf_use_s2(TRUE)} # BUGFIX 
+
+}
+}
+
+```
+
+
+```{r}
+save.image(file="./backup_inkar")
+```
+
+#Load Files and Merge 
+```{r}
+load(file="./backup_inkar")
+library(sfheaders)
+library(sf)
+final<-plz[,c(1,2,3,5,8)]
+final<- merge(final,Mesars_regional_indicators, by.x="verband", by.y="Kennziffer")
+final<-final[,c(2,3,4,5,8:14)]
+zip_statistics <- st_drop_geometry(final)
+write.csv(zip_statistics,"~/Desktop/ZIP-Codes/zip_statistics.csv", eol="\r\n", row.names=FALSE)
+
+```
+
