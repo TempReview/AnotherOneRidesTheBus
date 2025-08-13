@@ -157,7 +157,6 @@ dist_data$better_density <- dist_data$`Siedlungsdichte in km.x` < dist_data$`Sie
 dist_data$better_age <- dist_data$`Durchschnittsalter der Bevolkerung.x` < dist_data$`Durchschnittsalter der Bevolkerung.y` 
 dist_data$better_study <- dist_data$`Studierende je 100 Einwohner 18 bis 25 Jahre.x` < dist_data$`Studierende je 100 Einwohner 18 bis 25 Jahre.y` 
 
-#Create 
 
 # Merge University Names to Zip Codes
 name_key <- unique(import_gesis[,c(2:3)])

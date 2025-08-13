@@ -38,7 +38,6 @@ datasummary_skim(fin[, c(
   "better_density",
   "better_migration",
   "better_income",
-  "better_cinemas",
   "better_pop",
   "better_tourism",
   "better_cinemas",
