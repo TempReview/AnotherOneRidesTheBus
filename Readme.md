@@ -8,6 +8,8 @@ This repository provides supplementary material for the paper:
 > **Authors:**   
 > **Affiliations:**  
 
+The here listed code corresponds to the newest version of the paper, which was revised in July and is currently under review. For older states of code, please refer to the respective branches.
+
 ### Abstract
 The transition to university is pivotal for young people, yet policy factors influencing their choice to commute or relocate are underexplored. By leveraging regional variations in the coverage of student tickets, we explore whether their availability increases university entrants’ likelihood of commuting. We investigate how the importance of student tickets changes with commuting time and whether their relevance varies based on students' financial resources, social backgrounds, and risk attitudes. Using the MESARAS survey linked with data from the Google Distance Matrix API and regional administrative sources, we demonstrate that the availability of student tickets increases commuting likelihood, particularly for students with financial constraints and non-academic backgrounds. These findings highlight the relevance of affordable transportation in addressing social inequalities and enabling access to higher education.
 
