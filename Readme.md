@@ -1,3 +1,5 @@
+# THE CONTENT OF THIS BRANCH CORRESPONDS TO AN EARLIER VERSION OF THE PAPER. FOR THE NEWEST CODE, PLEASE SWITCH TO THE MAIN BRANCH.
+
 # Another One Rides the Bus
 
 ## Commuting versus Moving Decisions during the Transition to Higher Education
